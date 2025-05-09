@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c2d5cd;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 30px 10px 20px;
+}
+
+.logo {
+  font-size: 2em;
+  color: #007a33;
+}
+
+.subtext {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-icon {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 0.95em;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1em;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9em;
+}
+
+button {
+  padding: 12px;
+  background-color: #aaa;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+.forgot-link {
+  font-size: 0.9em;
+  text-align: center;
+  display: block;
+  margin-top: -10px;
+  color: #007a33;
+  text-decoration: none;
+}
+
+.security-warning {
+  background-color: #fff3cd;
+  border: 1px solid #e1b000;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  margin-bottom: 40px;
+}
+
+.security-warning p {
+  margin-bottom: 10px;
+}
+
+.advice-btn {
+  background: white;
+  border: 1px solid #007a33;
+  color: #007a33;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 20px;
+  color: #333;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons span {
+  font-size: 1.3em;
+  margin: 0 8px;
+}

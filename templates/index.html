@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Connexion - Cetelem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-$END$
+
+  <header>
+    <h1 class="logo">cetelem</h1>
+    <p class="subtext">Un crédit vous engage et doit être remboursé.<br>Vérifiez vos capacités de remboursement avant de vous engager.</p>
+  </header>
+
+  <main>
+    <section class="login-box">
+      <img src="{{ url_for('static', filename='user-icon.png') }}" alt="icon utilisateur" class="user-icon">
+
+      <h2>Accéder à mon<br><strong>espace sécurisé</strong></h2>
+
+      <form method="POST">
+        <label for="identifiant">Identifiant client</label>
+        <input type="text" id="identifiant" name="identifiant" placeholder="Ex: 1234567" required>
+
+        <div class="remember">
+          <input type="checkbox" id="memoriser">
+          <label for="memoriser">Mémoriser mon identifiant</label>
+        </div>
+
+        <button type="submit">Suivant</button>
+        <a href="#" class="forgot-link">Identifiant oublié ?</a>
+      </form>
+    </section>
+
+    <section class="security-warning">
+      <p><strong>⚠️ Contre la fraude, adoptez les bons réflexes</strong></p>
+      <p>Ne communiquez jamais vos informations personnelles (identifiant, numéro de carte, code secret, etc.) par téléphone, email, chat ou réseaux sociaux. JAMAIS Cetelem ne vous les demandera.</p>
+      <button class="advice-btn">Découvrez nos conseils →</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Virement express</a>
+      <a href="#">Résiliation</a>
+      <a href="#">Contact</a>
+      <a href="#">Questions / Réponses</a>
+      <a href="#">Réclamation</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">Informations sur les cookies</a>
+      <a href="#">Préférence de cookies</a>
+      <a href="#">Accessibilité</a>
+    </div>
+    <div class="social-icons">
+      <span>🔵</span>
+      <span>▶️</span>
+    </div>
+  </footer>
+
 </body>
 </html>
